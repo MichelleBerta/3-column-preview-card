@@ -1,13 +1,16 @@
 * {
   box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 5rem;
+  border-radius: 5px;
 }
 
 /* Clear floats after the columns */
@@ -17,17 +20,63 @@
   clear: both;
 }
 .container {
-    padding: 10rem;
+  padding: 10rem;
+  line-height: 1.8;
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  font-size: 35px;
+  color: hsl(0, 0%, 95%);
+}
+
+.button {
+  border-radius: 25px;
+  margin: 0 auto;
+  display: block;
+  border-color: transparent;
+  padding: 9px 20px;
+  text-align: center;
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
 }
 
 #sedans {
   background-color: hsl(31, 77%, 52%);
 }
 
+#btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
 #SUVs {
   background-color: hsl(184, 100%, 22%);
 }
 
+#btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
 #luxury {
-    background-color: hsl(179, 100%, 13%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+#btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 798px) {
+  /* For mobile phones: */
+  .column {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  button {
+    margin-left: -0.5rem;
+  }
 }
